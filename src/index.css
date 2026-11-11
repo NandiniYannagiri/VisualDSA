@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Custom modern scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.2);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.4);
+  }
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-subtle {
+  background: rgba(30, 41, 59, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Code line highlight animation */
+@keyframes codeLinePulse {
+  0%, 100% {
+    background-color: rgba(99, 102, 241, 0.2);
+  }
+  50% {
+    background-color: rgba(99, 102, 241, 0.35);
+  }
+}
+
+.active-code-line {
+  animation: codeLinePulse 2s ease-in-out infinite;
+  border-left: 3px solid #818cf8;
+}
+
+/* Bar visualization transitions */
+.algo-bar {
+  transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
+              background-color 0.2s ease,
+              transform 0.25s ease;
+}
+
+/* SVG Node animation */
+.tree-node-circle {
+  transition: fill 0.3s ease, stroke 0.3s ease, transform 0.3s ease;
+}
+
+.tree-edge {
+  transition: stroke 0.3s ease, stroke-width 0.3s ease;
+}

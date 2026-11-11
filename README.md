@@ -1,4 +1,4 @@
-# VisualDSA 🚀
+# VisualDSA 
 ### Visual Data Structures & Algorithms (DSA) Mastery Platform for Python
 
 VisualDSA is a modern, high-performance interactive web application engineered specifically for students, bootcamps, and software engineering candidates to intuitively master Data Structures and Algorithms with synchronized line-by-line Python code tracing, bi-directional timeline scrubbing, and live complexity telemetry.
@@ -24,7 +24,7 @@ VisualDSA is a modern, high-performance interactive web application engineered s
 ## 📂 Project Directory Structure
 
 ```
-algovision/
+VisualDSA/
 ├── package.json               # Dependencies and scripts (React, Vite, Lucide, Tailwind)
 ├── tsconfig.json              # TypeScript compilation config
 ├── tsconfig.node.json
@@ -83,7 +83,7 @@ algovision/
 
 ---
 
-## 🚀 Setup & Running Locally
+### Setup & Running Locally
 
 ### 1. Install Node.js (if not already installed)
 Ensure Node.js (v18 or higher) is installed on your computer.

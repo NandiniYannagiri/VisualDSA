@@ -1,0 +1,7 @@
+# VisualDSA - Interactive Algorithmic Telemetry Platform
+# Core build suite runs on Python 3.8+ Standard Library
+
+# Development & preview serving tools (optional)
+fastapi>=0.100.0
+uvicorn>=0.23.0
+requests>=2.31.0
