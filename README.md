@@ -90,7 +90,7 @@ Ensure Node.js (v18 or higher) is installed on your computer.
 
 ### 2. Install Dependencies
 ```bash
-cd algovision
+cd VisualDSA
 npm install
 ```
 
